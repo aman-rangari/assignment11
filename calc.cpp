@@ -2,6 +2,10 @@
 
 using namespace std;
 
+int add(int a, int b){
+    return a+b;
+}
+
 int subtract(int a, int b) {
     return a - b;
 }
@@ -34,6 +38,8 @@ int main() {
     cin >> num2;
 
     switch (operation) {
+        case '+':
+            cout << "Result: " << add(num1, num2) << endl;
         case '-':
             cout << "Result: " << subtract(num1, num2) << endl;
             break;
